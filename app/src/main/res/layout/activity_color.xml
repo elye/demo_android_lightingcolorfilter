@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/image_background"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="250dp"
+                android:src="@drawable/background"/>
+
+        <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/image_bulb"
+                android:layout_marginTop="-15dp"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bulb"/>
+
+    </FrameLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Mul Red"/>
+
+            <SeekBar
+                    android:id="@+id/seek_red_mult"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Mul Green"/>
+
+            <SeekBar
+                    android:id="@+id/seek_green_mult"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Mul Blue"/>
+
+            <SeekBar
+                    android:id="@+id/seek_blue_mult"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Add Red"/>
+
+            <SeekBar
+                    android:id="@+id/seek_red_add"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Add Green"/>
+
+            <SeekBar
+                    android:id="@+id/seek_green_add"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="16dp"
+                      android:text="Add Blue"/>
+            <SeekBar
+                    android:id="@+id/seek_blue_add"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="255"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
