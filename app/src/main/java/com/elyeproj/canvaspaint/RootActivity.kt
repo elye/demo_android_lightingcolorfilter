@@ -18,6 +18,10 @@ class RootActivity : AppCompatActivity() {
         button_color.setOnClickListener {
             startActivity(Intent(this, ColorActivity::class.java))
         }
+
+        button_matrix.setOnClickListener {
+            startActivity(Intent(this, MatrixActivity::class.java))
+        }
     }
 
 }

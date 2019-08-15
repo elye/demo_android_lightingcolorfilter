@@ -93,6 +93,4 @@ class MainActivity : AppCompatActivity() {
         image_background.colorFilter = LightingColorFilter(multipler_bb, addition_bb)
         image_bulb.colorFilter = LightingColorFilter(multipler_bulb, addition_bulb)
     }
-
-
 }

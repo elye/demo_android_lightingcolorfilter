@@ -76,16 +76,6 @@ class ColorActivity : AppCompatActivity() {
         })
     }
 
-    private fun settingLightTuned(progress: Int) {
-//        val bulbMul = spread((progress / 255f * 255f + 0).toInt())
-//        val bulbAdd = spread((progress / 255f * 200f + 0).toInt())
-//        val bbMul = spread((progress / 255f * 105f + 150).toInt())
-//        val bbAdd = spread((progress / 255f * 50f + 0).toInt())
-
-//        image_background.colorFilter = LightingColorFilter(bbMul, bbAdd)
-//        image_bulb.colorFilter = LightingColorFilter(bulbMul, bulbAdd)
-    }
-
     private fun setLighting() {
         image_background.colorFilter = LightingColorFilter(
             red_mult * 0x10000 + green_mult * 0x100 + blue_mult * 0x1,
