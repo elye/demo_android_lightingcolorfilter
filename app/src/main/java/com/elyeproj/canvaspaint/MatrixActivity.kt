@@ -43,6 +43,36 @@ class MatrixActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(seekBar: SeekBar?) {}
         })
 
+        seek_scale_red.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                val matrix = ColorMatrix()
+                matrix.setScale((progress)/255f, 1f,1f, 1f)
+                image_background.colorFilter = ColorMatrixColorFilter(matrix)
+            }
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+        })
+
+        seek_scale_green.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                val matrix = ColorMatrix()
+                matrix.setScale(1f, (progress)/255f,1f, 1f)
+                image_background.colorFilter = ColorMatrixColorFilter(matrix)
+            }
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+        })
+
+        seek_scale_blue.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                val matrix = ColorMatrix()
+                matrix.setScale(1f, 1f,(progress)/255f, 1f)
+                image_background.colorFilter = ColorMatrixColorFilter(matrix)
+            }
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+        })
+
         seek_rotate_red.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 val matrix = ColorMatrix()

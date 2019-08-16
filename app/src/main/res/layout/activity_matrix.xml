@@ -47,6 +47,42 @@
                   android:paddingEnd="16dp">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
+                  android:text="S.Red"/>
+        <SeekBar
+                android:id="@+id/seek_scale_red"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="510"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="S.Green"/>
+        <SeekBar
+                android:id="@+id/seek_scale_green"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="510"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="S.Blue"/>
+        <SeekBar
+                android:id="@+id/seek_scale_blue"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="510"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="5dp"
+                  android:paddingStart="16dp"
+                  android:paddingEnd="16dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
                   android:text="R.Red"/>
         <SeekBar
                 android:id="@+id/seek_rotate_red"
