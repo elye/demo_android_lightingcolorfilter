@@ -12,6 +12,100 @@
             android:layout_height="250dp"
             android:src="@drawable/colorful_flower"/>
 
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="5dp"
+                  android:paddingStart="16dp"
+                  android:paddingEnd="16dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Saturation"/>
+        <SeekBar
+                android:id="@+id/seek_saturation"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="510"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Scale"/>
+        <SeekBar
+                android:id="@+id/seek_scale"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="510"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="5dp"
+                  android:paddingStart="16dp"
+                  android:paddingEnd="16dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="R.Red"/>
+        <SeekBar
+                android:id="@+id/seek_rotate_red"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="360"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="R.Green"/>
+        <SeekBar
+                android:id="@+id/seek_rotate_green"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="360"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="R.Blue"/>
+        <SeekBar
+                android:id="@+id/seek_rotate_blue"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="360"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="5dp"
+                  android:paddingStart="16dp"
+                  android:paddingEnd="16dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Binary"/>
+        <SeekBar
+                android:id="@+id/seek_binary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Black White"/>
+        <SeekBar
+                android:id="@+id/seek_black_white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"/>
+
+    </LinearLayout>
+
     <GridLayout
             android:id="@+id/radio_style"
             android:layout_gravity="center"
@@ -88,6 +182,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Blue Red Green"/>
+        <RadioButton
+                android:id="@+id/radio_yuv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RGB to YUV"/>
     </GridLayout>
 
 </LinearLayout>
