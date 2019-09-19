@@ -15,6 +15,10 @@ class RootActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
+        button_manual.setOnClickListener {
+            startActivity(Intent(this, ManualActivity::class.java))
+        }
+
         button_color.setOnClickListener {
             startActivity(Intent(this, ColorActivity::class.java))
         }

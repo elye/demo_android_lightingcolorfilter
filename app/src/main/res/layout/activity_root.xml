@@ -10,6 +10,11 @@
             android:layout_height="wrap_content"
             android:text="Lighting Test"/>
 
+    <Button android:id="@+id/button_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual Test"/>
+
     <Button android:id="@+id/button_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
