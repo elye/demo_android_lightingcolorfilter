@@ -34,9 +34,6 @@ class ManualActivity : AppCompatActivity() {
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}
             override fun onStopTrackingTouch(seekBar: SeekBar?) {}
         })
-
-        // Initial setting
-        settingLightTuned(0)
     }
 
     private fun settingLightTuned(progress: Int) {
